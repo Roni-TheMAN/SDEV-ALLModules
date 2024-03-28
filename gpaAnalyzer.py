@@ -22,7 +22,7 @@ while True:
     if gpa >= 3.5:  # Dean List Checker
         print(f"{last_name}, {first_name} has a GPA of {gpa}.")
         print("This student has made to Dean's list.")
-    elif gpa >= 3.2:  # Honor List Checker
+    elif gpa >= 3.25:  # Honor List Checker
         print(f"{last_name}, {first_name} has a GPA of {gpa}.")
         print("This student has made to Honor's list.")
     else:  # On Track Checker
