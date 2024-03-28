@@ -10,13 +10,21 @@ while True:
         break
     first_name = input("Enter your first name: ")
     gpa = float(input("Enter your GPA: "))
+    while True:
+        if gpa > 4 or gpa < 0:
+            print("Invalid GPA. Please enter a valid GPA between 0 and 4.")
+            gpa = float(input("Enter your GPA: "))
+        else: # Valid GPA
+            break
 
-    if gpa >= 3.5: #Dean List Checker
+
+
+    if gpa >= 3.5:  # Dean List Checker
         print(f"{last_name}, {first_name} has a GPA of {gpa}.")
         print("This student has made to Dean's list.")
-    elif gpa >= 3.2: #Honor List Checker
+    elif gpa >= 3.2:  # Honor List Checker
         print(f"{last_name}, {first_name} has a GPA of {gpa}.")
         print("This student has made to Honor's list.")
-    else: #On Track Checker
+    else:  # On Track Checker
         print(f"{last_name}, {first_name} has a GPA of {gpa}.")
-        print("This student is on a good track.")
+        print("This student needs an improving track.")
